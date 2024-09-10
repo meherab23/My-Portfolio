@@ -75,51 +75,28 @@
    <header>
    	<div class="">
 		<style>
-			body {
-				margin: 0;
-				font-family: Arial, sans-serif; /* Clean and standard font */
-			}
-		
-			.bar {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				background-color: #FF0077; /* A standard green color for the bar */
-				padding: 5px 10px;
-				color: white;
-				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a more defined look */
-				position: relative;
-			}
-		
-			.menu-toggle {
-				font-size: 18px;
-				cursor: pointer;
-				background-color: #333; /* Dark background for contrast */
-				padding: 10px 15px;
-				border-radius: 5px;
-				text-transform: uppercase; /* Adds a more structured look */
-				transition: background-color 0.3s ease;
-			}
-		
-			.menu-toggle:hover {
-				background-color: #555; /* Lighter background on hover */
-			}
-		
 			.menu-bar {
 				flex: 1;
 				text-align: center;
-				font-size: 16px;
+				font-family: 'Arial', sans-serif; /* Clean and standard font */
+				font-size: 18px; /* Slightly larger for readability */
+				font-weight: bold; /* Bold text for emphasis */
+				color: #ffffff; /* White text to contrast with the background */
+				text-transform: uppercase; /* Standardizes the text with uppercase letters */
+				letter-spacing: 1px; /* Adds space between letters for clarity */
 			}
 		
 			.menu-bar a {
 				color: white;
-				text-decoration: none;
-				padding: 0 15px;
-				transition: color 0.3s ease;
+				text-decoration: none; /* Removes underlines for a cleaner look */
+				padding: 0 15px; /* Adds spacing around the menu items */
+				transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition effects */
+				border-bottom: 2px solid transparent; /* Underline effect */
 			}
-
+		
 			.menu-bar a:hover {
-				color: #e0e0e0; /* Lighter color on hover */
+				color: #e0e0e0; /* Slightly lighter color on hover */
+				border-bottom: 2px solid #ffffff; /* Adds a visible underline on hover */
 			}
 		</style>
 		<div class="bar">
