@@ -75,64 +75,33 @@
    <header>
    	<div class="">
 		<style>
-			.black-portion {
-				background: black;
-				padding: 10px 0;
-				display: flex;
-				justify-content: center;
-			}
-			
 			.bar {
 				display: flex;
 				align-items: center;
-				width: 100%;
-				max-width: 1200px;
-				position: relative;
-			}
-			
-			.menu-toggle, .logo {
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
+				justify-content: space-between;
+				background-color: #333; /* Standard menu bar color */
+				padding: 10px 20px; /* Padding for the menu bar */
 				color: white;
 			}
-			
+		
 			.menu-toggle {
-				left: 0;
-				padding: 8px 12px;
-				background-color: #333;
-				border-radius: 5px;
-				font-size: 14px;
+				font-size: 16px;
 				cursor: pointer;
+				background-color: #555;
+				padding: 8px 12px;
+				border-radius: 4px;
 			}
-			
+		
 			.menu-bar {
 				flex: 1;
 				text-align: center;
-				color: white;
 				font-size: 16px;
-				padding: 5px 0;
-			}
-			
-			.logo {
-				right: 0;
-			}
-			
-			.logo img {
-				max-height: 60px; /* Reduce the size of the logo */
 			}
 		</style>
 		
-		<div class="black-portion">
-			<div class="bar">
-				<a class="menu-toggle" href="#"><span></span></a>
-				<div class="menu-bar"></div>
-				<div class="logo">
-					<a href="index.html">
-						<img src="./images/logo.png" alt="Meherab Chowdhury's Logo">
-					</a>
-				</div>
-			</div>
+		<div class="bar">
+			<a class="menu-toggle" href="#"><span>Menu</span></a>
+			<div class="menu-bar">Your Menu Items</div>
 		</div>
 		
 
@@ -328,7 +297,6 @@
 	   					<i class="fa fa-briefcase"></i>
 	   				</div>
 
-					
 	   				<div class="timeline-header">
 						<h3>Job</h3>
 						<p>July 2024 - Present(2024)</p>
@@ -415,7 +383,7 @@
    			<!-- portfolio-wrapper -->
 	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
 
-		<div class="bgrid folio-item">
+		<!-- <div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="images/portfolio/guestinme_app.png" alt="GuestInMe Nightlife Application">
 	                  <a href="#modal-08" class="overlay">
@@ -429,8 +397,7 @@
 	                     </div>
 	                  </a>
 	               </div>
-	        </div> <!-- /folio-item -->
-
+	        </div> 
 		<div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="images/portfolio/showworld_app.png" alt="Show World Film Directory Application">
@@ -444,7 +411,7 @@
 		     				</div>
 	                     </div>
 	               </div>
-	        </div> <!-- /folio-item -->
+	        </div> 
 
                 <div class="bgrid folio-item">
 	               <div class="item-wrap">
@@ -460,7 +427,7 @@
 	                     </div>
 	                  </a>
 	               </div>
-	        	</div> <!-- /folio-item -->
+	        	</div> 
 
 	         	<div class="bgrid folio-item">
 	               <div class="item-wrap">
@@ -476,8 +443,7 @@
 	                     </div>                    
 	                  </a>
 	               </div>	               
-	        		</div> <!-- /folio-item -->
-
+	        		</div> 
 	        		<div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="images/portfolio/buttonpress.jpg" alt="Button Press">
@@ -492,7 +458,7 @@
 	                     </div>                    
 	                  </a>
 	               </div>
-	        		</div> <!-- /folio-item -->
+	        		</div>
 
 	            <div class="bgrid folio-item">
 	               <div class="item-wrap">
@@ -508,7 +474,7 @@
 	                     </div>
 	                  </a>
 	               </div>
-	        	</div> <!-- /folio-item -->
+	        	</div> /folio-item -->
 
 	            <div class="bgrid folio-item">
 	               <div class="item-wrap">
@@ -519,8 +485,8 @@
 	                     		<h3 class="folio-title">Online Voting System</h3>	     					    
                                 <span class="folio-types">
                                     Web Development
-                                </span>		     		
-                            </div>  	                      	
+                                </span>
+                            </div>
 	                     </div>
 	                  </a>
 	               </div>
@@ -544,7 +510,7 @@
 
 	            <!-- modal popups - begin
 	            ============================================================= -->
-		<div id="modal-08" class="popup-modal slider mfp-hide">	
+		<!-- <div id="modal-08" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
 				     		<img src="images/portfolio/modals/m-guestinme_app.png" alt="GuestInMe App" />
@@ -654,7 +620,7 @@
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>		      
 
-                </div> <!-- /modal-03 -->
+                </div> /modal-03 -->
 
                 <div id="modal-02" class="popup-modal slider mfp-hide">	
 
@@ -663,10 +629,10 @@
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>Snake Game</h4>		      
-					      <p>Classical Snake game on Java (one of my first Projects).</p>
+					      <h4>Online Voting System</h4>		      
+					      <p> this is a online voting system (one of my first Projects).</p>
 
-					      <div class="categories">Java Game Development</div>			               
+					      <div class="categories">PHP Web Development</div>			               
 					   </div>
 
 			         <div class="link-box">
