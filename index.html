@@ -75,21 +75,34 @@
    <header>
    	<div class="">
 		<style>
+			body {
+				margin: 0;
+				font-family: Arial, sans-serif; /* Clean and standard font */
+			}
+		
 			.bar {
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
-				background-color: #333; /* Standard menu bar color */
-				padding: 10px 20px; /* Padding for the menu bar */
+				background-color: #4CAF50; /* A standard green color for the bar */
+				padding: 10px 20px;
 				color: white;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a more defined look */
+				position: relative;
 			}
 		
 			.menu-toggle {
-				font-size: 16px;
+				font-size: 18px;
 				cursor: pointer;
-				background-color: #555;
-				padding: 8px 12px;
-				border-radius: 4px;
+				background-color: #333; /* Dark background for contrast */
+				padding: 10px 15px;
+				border-radius: 5px;
+				text-transform: uppercase; /* Adds a more structured look */
+				transition: background-color 0.3s ease;
+			}
+		
+			.menu-toggle:hover {
+				background-color: #555; /* Lighter background on hover */
 			}
 		
 			.menu-bar {
@@ -97,8 +110,18 @@
 				text-align: center;
 				font-size: 16px;
 			}
-		</style>
 		
+			.menu-bar a {
+				color: white;
+				text-decoration: none;
+				padding: 0 15px;
+				transition: color 0.3s ease;
+			}
+		
+			.menu-bar a:hover {
+				color: #e0e0e0; /* Lighter color on hover */
+			}
+		</style>
 		<div class="bar">
 			<a class="menu-toggle" href="#"><span>Menu</span></a>
 			<div class="menu-bar">Your Menu Items</div>
@@ -630,7 +653,7 @@
 
 					   <div class="description-box">
 					      <h4>Online Voting System</h4>		      
-					      <p> this is a online voting system (one of my first Projects).</p>
+					      <p> This is a online voting system (one of my first Projects).</p>
 
 					      <div class="categories">PHP Web Development</div>			               
 					   </div>
