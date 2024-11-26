@@ -1229,19 +1229,57 @@ header .logo a {
 }
 .main-navigation li a {
 	display: block;
-	color: #ff00959f;
+	color: #e20101;
 	width: auto;
 	padding: 15px 0;
 	line-height: 16px;
 	border: none;
 }
 .main-navigation li a:hover {
-    color: #ff1f88fb; 
-    padding-left: 1.5rem;
+	color: #FF0077;
+	padding-left: 1rem;
 }
 .main-navigation li.current > a {
 	background: none;
 	color: #FF0077;
+} */ */ */
+
+/* Main Navigation */
+.main-navigation {
+    padding: 0; /* Remove unnecessary padding */
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: none; /* Hidden by default */
+}
+
+.main-navigation > li {
+    display: block;
+    height: auto;
+    text-align: left;
+    padding: 0;
+}
+
+.main-navigation li a {
+    display: block;
+    color: #ff00959f;
+	font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Neutral text color */
+    width: auto;
+    padding: 15px 0;
+    line-height: 16px;
+    text-decoration: none; /* Clean links */
+    transition: color 0.3s ease, padding-left 0.3s ease; 
+}
+
+.main-navigation li a:hover {
+    color: #ff1f88fb; /* Highlight color on hover */
+    padding-left: 1.5rem; /* Slight movement on hover */
+}
+
+.main-navigation li.current > a {
+    color: #FF0077; /* Active link highlight */
+    font-weight: bold;
 }
 
 /**
