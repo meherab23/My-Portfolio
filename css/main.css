@@ -1119,13 +1119,6 @@ header .logo a {
     font-family:'Comic Sans MS';
 	/* background-size: 113px 30px; */
 }
-header{
-	background-color: black;
-	width: 220px;
-	height:66px;
-	display: inline;
-}
-
 /**
  * menu toggle - (_layout.css)
  * ------------------------------------------------------------------- 
@@ -1221,10 +1214,9 @@ header{
 
 /* dropdown nav */
 .main-navigation {
-	background: #000000;
-	padding: 24px 30px 42px;
+	padding: 25px 30px;
 	margin: 0;
-	width: 100%;
+	width: 12%;
 	height: auto;
 	clear: both;
 	display: none;
