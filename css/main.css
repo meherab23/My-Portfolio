@@ -1237,7 +1237,7 @@ header .logo a {
 }
 .main-navigation li a:hover {
 	color: #FF0077;
-	padding-left: 0.5rem;
+	padding-left: 1rem;
 }
 .main-navigation li.current > a {
 	background: none;
@@ -1280,6 +1280,67 @@ header .logo a {
 .main-navigation li.current > a {
     color: #FF0077; /* Active link highlight */
     font-weight: bold;
+}
+
+/* Toggle Menu Functionality */
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    position: relative;
+	color: #FF0077;
+    width: 40px;
+    height: 30px;
+    margin: 10px;
+}
+
+.menu-toggle span,
+.menu-toggle span::before,
+.menu-toggle span::after {
+    display: block;
+    background-color: #da1280e3; /* Neutral bar color */
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle span::before {
+    content: '';
+    top: -10px;
+}
+
+.menu-toggle span::after {
+    content: '';
+    top: 10px;
+}
+
+/* Open Menu Style */
+.menu-toggle.is-clicked span {
+    background-color: transparent;
+}
+
+.menu-toggle.is-clicked span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.menu-toggle.is-clicked span::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* Show Menu When Toggled */
+.menu-toggle.is-clicked + .main-navigation {
+    display: block;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    right: 0;
+    background: #fff; /* White background for the dropdown */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1000;
 }
 
 /**
